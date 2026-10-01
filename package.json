@@ -1,0 +1,22 @@
+{
+  "name": "belajar-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "acp":"git add . && git commit -m \"update\" && git push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HAYKALAB/belajarNodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/HAYKALAB/belajarNodejs/issues"
+  },
+  "homepage": "https://github.com/HAYKALAB/belajarNodejs#readme"
+}

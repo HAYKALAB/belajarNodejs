@@ -1,0 +1,14 @@
+{
+  "name": "8-npm",
+  "version": "1.0.0",
+  "description": "belajar node js",
+  "license": "ISC",
+  "author": "haykal",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+   
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
