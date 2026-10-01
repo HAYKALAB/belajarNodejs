@@ -1,7 +1,7 @@
 //core module
 //file system
 
-const { error } = require('console')
+// const { error } = require('console')
 const fs = require('fs')
 
 //menuliskan string ke file(synchronous)
@@ -10,7 +10,6 @@ const fs = require('fs')
 // }catch(e){
 //     console.log(e)
 // }
-
 
 //menuliskan string ke file (asynchronous)
 
@@ -26,7 +25,27 @@ const fs = require('fs')
 
 // membaca isi file (asynchronous)
 
-fs.readFile('./data/tes.txt',"utf-8",(error,data)=>{
-    if (error) throw  error;
-    console.log(data)
-})
+// fs.readFile('./data/tes.txt',"utf-8",(error,data)=>{
+//     if (error) throw  error;
+//     console.log(data)
+// })
+
+// readline
+
+const readline = require("readline");
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+rl.question("masukkan nama anda:", (nama) => {
+  rl.question("masukkan no telepon anda:", (telepon) => {
+    const contact = {nama,telepon}
+   const file =  fs.readFileSync('./data/contacts.json',"utf-8")
+    const contacts = JSON.parse(file)
+    contacts.push(contact)
+    fs.writeFileSync("./data/contacts.json",JSON.stringify(contacts))
+    console.log("terima kasih sudah memasukkan data")
+    rl.close();
+  });
+});
