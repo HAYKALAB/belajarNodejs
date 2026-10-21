@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "acp":"git add . && git commit -m \"update\" && git push",
+    "acp": "git add . && git commit -m \"update\" && git push",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/HAYKALAB/belajarNodejs/issues"
   },
-  "homepage": "https://github.com/HAYKALAB/belajarNodejs#readme"
+  "homepage": "https://github.com/HAYKALAB/belajarNodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
