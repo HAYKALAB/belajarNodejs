@@ -1,0 +1,24 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Detail contact</h2>
+      <% if (!contact) { %>
+       <div class="alert theme-danger fw-bold" role="alert">
+  <p>data contact tidak ada <br>
+    <a href="/contact" class="alert-link fw-normal"> &laquo;  kembali ke daftar contact</a>. </p>
+</div>
+      <% }else{ %>
+      <div class="card" style="max-width: 320px">
+        <div class="card-body">
+          <h4 class="card-title"><%= contact.nama %></h4>
+          <p class="card-subtitle fg-3"><%= contact.nohp %></p>
+          <p class="card-text">
+            <%= contact.email %>
+          </p>
+          <a href="/contact"> &laquo;kembali ke daftar contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ <% } %>
+</div>
